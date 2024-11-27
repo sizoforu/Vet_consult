@@ -584,7 +584,7 @@ def display_consultation_data(data):
                 if exam.notes:
                     st.write(f"Notas: {exam.notes}")
 
-        st.subheader("💡 Recommendaciones")
+        st.subheader("💡 Recomendaciones")
         for rec in data.recommendations:
             with st.expander(f"{rec.type}"):
                 st.write(f"Detalles: {rec.details}")
